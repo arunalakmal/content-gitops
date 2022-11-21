@@ -1,0 +1,4 @@
+dependencies:
+- name: avp
+  version: "0.1.0"
+  repository: "https://arunalakmal.github.io/helm-repo"
