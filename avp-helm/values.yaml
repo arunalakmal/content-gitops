@@ -1,0 +1,18 @@
+avp:
+  namespace: default
+  project: default
+  # Deployment
+  appName: cad-agent
+  # secretName: cad-agent-secret
+  swdShareName: swd-share
+  rapidShareName: rapid-share
+  image: nginx:latest
+  rootPath: /mnt/swd/
+  keyVaultUrl: https://akv889900.vault.azure.net
+  threadSleep: 5
+  # Secrets
+  keyVault: akv889900
+  secrets:
+    ACCOUNT_KEY: tenant
+  serviceAccount:
+    automountServiceAccountToken: false
